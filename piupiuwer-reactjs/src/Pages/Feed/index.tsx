@@ -1,5 +1,7 @@
 import React from "react";
 import { HeaderComponent, SideBarMenu, FeedSpaceComponent, MainComponent, HoneComponent, StrongComponent } from "./styles";
+import AvatarImg from "../../Assests/Images/undraw_male_avatar_323b.svg";
+
 
 function Feed(){
     return(
@@ -13,13 +15,20 @@ function Feed(){
                 <MainComponent className="feedMain">
                     <SideBarMenu className="sideBarMenu">
                         <div>
-                            <img src="" alt="" />
+                            <img src={AvatarImg} className="userProfilePhoto" alt="avatar"/>
                             <h2>Nome do usuario</h2>
                         </div>
                         <ul>
-                            <li>Qualquer coisa</li>
-                            <li>Qualquer coisa</li>
-                            <li>Qualquer cosia</li>
+                            <li><h3 className="sideBarMenuTitle">Grupos</h3></li>
+                            <li className="liItem">Qualquer coisa</li>
+                            <li className="liItem">Qualquer coisa</li>
+                            <li className="liItem">Qualquer cosia</li>
+                        </ul>
+                        <ul>
+                            <li><h3 className="sideBarMenuTitle">Seguindo</h3></li>
+                            <li className="liItem">Qualquer coisa</li>
+                            <li className="liItem">Qualquer coisa</li>
+                            <li className="liItem">Qualquer cosia</li>
                         </ul>
                     </SideBarMenu>
                     
@@ -28,12 +37,8 @@ function Feed(){
                         </p>
                     </FeedSpaceComponent>
 
-                    <SideBarMenu>
-                        <ul>
-                            <li>Qualquer coisa</li>
-                            <li>Qualquer coisa</li>
-                            <li>Qualquer coisa</li>
-                        </ul>
+                    <SideBarMenu className="leftSide">
+                        
                     </SideBarMenu>
                 </MainComponent>
 
