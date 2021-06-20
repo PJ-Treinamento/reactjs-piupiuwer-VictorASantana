@@ -42,18 +42,49 @@ export const MainComponent = styled.main`
 `;
 
 export const FeedSpaceComponent = styled.div`
-    margin-top: 12rem;
+    margin-top: 6rem;
     padding: 1.6rem 2.5rem;
-    background: var(--color-background-light);
+    background: var(--color-background);
     height: 40vh;
     max-width: 800vw;
     min-width: 50vw;
     font-size: 1.6rem;
     color: var(--color-text-base);
     border-radius: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    .newPiu{
+        height: 40vh;
+        width: 70vw;
+        margin-top: -4rem;
+        border-radius: 0.6rem;
+        padding: 1.2rem;
+        background: var(--color-background-light);
+    }
+
+    .postContainer{
+        height: 40vh;
+        width: 70vw;
+        margin-top: 5rem;
+        border-radius: 0.6rem;
+        padding: 1.2rem;
+        background: var(--color-background-light);
+    }
 
     @media(max-width: 700px){
-        margin-top: 12rem;
+        margin-top: 2rem;
+
+        .newPiu{
+        height: 40vh;
+        width: 70vw;
+        margin-top: -1rem;
+        border-radius: 0.6rem;
+        padding: 1.2rem;
+        background: var(--color-background-light);
+    }
     }
 `;
 

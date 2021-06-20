@@ -6,11 +6,13 @@ export default createGlobalStyle`
     --color-background: #161A1D;
     --color-background-light: #535461;
     --color-primary: #E5383B;
+    --color-primary-dark: #E5183B;
     --color-text-base: #FFF;
     --color-line-in-white: #E6E6F0;
     --color-input-background: #293241;
     --color-button-text: #FFFFFF;
     --color-box-base: #3D5A80;
+    --color-box-base-dark: #293241;
 }
 
 *{
